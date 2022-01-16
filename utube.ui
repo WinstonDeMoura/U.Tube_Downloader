@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1000</width>
+    <height>700</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>U.Tube</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="Assets/Resources.qrc">
+    <normaloff>:/Icon/icon.ico</normaloff>:/Icon/icon.ico</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(13, 13, 13);
+color: rgb(255, 255, 255);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QFrame" name="frame">
+      <property name="minimumSize">
+       <size>
+        <width>1000</width>
+        <height>700</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>1000</width>
+        <height>700</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QFrame" name="main_frame">
+         <property name="minimumSize">
+          <size>
+           <width>1000</width>
+           <height>700</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>1000</width>
+           <height>700</height>
+          </size>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(13, 13, 13);</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <widget class="QFrame" name="Logo">
+          <property name="geometry">
+           <rect>
+            <x>326</x>
+            <y>30</y>
+            <width>361</width>
+            <height>121</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-image: url(:/Logo/Logo_ong.png);
+background-position: center;
+background-repeat: norepeat;</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="CampoLink">
+          <property name="geometry">
+           <rect>
+            <x>225</x>
+            <y>230</y>
+            <width>550</width>
+            <height>45</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Roboto</family>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit {
+border: 2px solid;
+border-radius:5px;
+padding: 10px;
+background-color: rgb(80, 80, 80);
+color: rgb(255, 255, 255);}
+
+QLineEdit:hover {
+border: 2px solid rgb(55, 55, 55);}
+
+QLineEdit:focus {
+border: 2px solid rgb(205, 54, 88)
+}</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <property name="placeholderText">
+           <string>Cole o link do vídeo aqui</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="Buscar">
+          <property name="geometry">
+           <rect>
+            <x>420</x>
+            <y>280</y>
+            <width>160</width>
+            <height>32</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Roboto</family>
+            <pointsize>12</pointsize>
+            <weight>50</weight>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+background-color: rgb(58, 19, 190);
+border: 2px solid;
+border-radius: 5px;
+color: rgb(255, 255, 255)
+}
+
+QPushButton:hover{
+background-color: rgb(49, 16, 167);
+border: 2px solid rgb(50, 50, 50);
+
+}</string>
+          </property>
+          <property name="text">
+           <string>Buscar</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="Destino">
+          <property name="geometry">
+           <rect>
+            <x>410</x>
+            <y>160</y>
+            <width>180</width>
+            <height>32</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Roboto</family>
+            <pointsize>12</pointsize>
+            <weight>50</weight>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+background-color: rgb(242, 25, 2);
+border: 2px solid;
+border-radius: 5px;
+color: rgb(255, 255, 255)
+}
+
+QPushButton:hover{
+background-color: rgb(214, 19, 1);
+border: 2px solid rgb(50, 50, 50);
+
+}</string>
+          </property>
+          <property name="text">
+           <string>Selecionar destino</string>
+          </property>
+         </widget>
+         <widget class="QFrame" name="bottom">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>660</y>
+            <width>1000</width>
+            <height>40</height>
+           </rect>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>1000</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>1000</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(22, 22, 22);</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_2">
+           <item>
+            <widget class="QLabel" name="copyright">
+             <property name="font">
+              <font>
+               <family>Obadiah</family>
+               <pointsize>11</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: rgb(255, 255, 255);</string>
+             </property>
+             <property name="text">
+              <string>Código Disponível no meu GitHub: https://github.com/WinstonDeMoura</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QLabel" name="TituloVideo">
+          <property name="geometry">
+           <rect>
+            <x>75</x>
+            <y>320</y>
+            <width>850</width>
+            <height>25</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Roboto</family>
+            <pointsize>11</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="text">
+           <string>Título do Vídeo</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+         <widget class="QStackedWidget" name="stackedWidget">
+          <property name="geometry">
+           <rect>
+            <x>50</x>
+            <y>370</y>
+            <width>900</width>
+            <height>281</height>
+           </rect>
+          </property>
+          <property name="currentIndex">
+           <number>0</number>
+          </property>
+          <widget class="QWidget" name="page_2">
+           <layout class="QVBoxLayout" name="verticalLayout_3">
+            <item>
+             <widget class="QFrame" name="FramePagina">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>250</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(13, 13, 13);</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <layout class="QHBoxLayout" name="horizontalLayout_3">
+               <item>
+                <widget class="QFrame" name="FrameThumb">
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(13, 13, 13);</string>
+                 </property>
+                 <property name="frameShape">
+                  <enum>QFrame::StyledPanel</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Raised</enum>
+                 </property>
+                 <widget class="QLabel" name="PlacetoThumb">
+                  <property name="geometry">
+                   <rect>
+                    <x>10</x>
+                    <y>10</y>
+                    <width>408</width>
+                    <height>201</height>
+                   </rect>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>500</width>
+                    <height>500</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true"/>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </widget>
+               </item>
+               <item>
+                <widget class="QFrame" name="BotoesDownload">
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(13, 13, 13);</string>
+                 </property>
+                 <property name="frameShape">
+                  <enum>QFrame::StyledPanel</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Raised</enum>
+                 </property>
+                 <widget class="QPushButton" name="Donwload_360p">
+                  <property name="geometry">
+                   <rect>
+                    <x>134</x>
+                    <y>106</y>
+                    <width>190</width>
+                    <height>32</height>
+                   </rect>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Roboto</family>
+                    <pointsize>12</pointsize>
+                    <weight>75</weight>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton {
+background-color: rgb(58, 19, 190);
+border: 2px solid;
+border-radius: 5px;
+color: rgb(255, 255, 255)
+}
+
+QPushButton:hover{
+background-color: rgb(49, 16, 167);
+border: 2px solid rgb(50, 50, 50);
+
+}</string>
+                  </property>
+                  <property name="text">
+                   <string>Download 360p</string>
+                  </property>
+                  <property name="icon">
+                   <iconset resource="Assets/Resources.qrc">
+                    <normaloff>:/Video/filme.ico</normaloff>:/Video/filme.ico</iconset>
+                  </property>
+                 </widget>
+                 <widget class="QPushButton" name="Download_HD">
+                  <property name="geometry">
+                   <rect>
+                    <x>134</x>
+                    <y>62</y>
+                    <width>190</width>
+                    <height>31</height>
+                   </rect>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Roboto</family>
+                    <pointsize>12</pointsize>
+                    <weight>75</weight>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton {
+background-color: rgb(242, 25, 2);
+border: 2px solid;
+border-radius: 5px;
+color: rgb(255, 255, 255);
+}
+
+QPushButton:hover{
+background-color: rgb(214, 19, 1);
+border: 2px solid rgb(50, 50, 50);
+
+}</string>
+                  </property>
+                  <property name="text">
+                   <string>Download HD</string>
+                  </property>
+                  <property name="icon">
+                   <iconset resource="Assets/Resources.qrc">
+                    <normaloff>:/Video/filme.ico</normaloff>:/Video/filme.ico</iconset>
+                  </property>
+                 </widget>
+                 <widget class="QPushButton" name="Donwload_MP3">
+                  <property name="geometry">
+                   <rect>
+                    <x>134</x>
+                    <y>150</y>
+                    <width>190</width>
+                    <height>32</height>
+                   </rect>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Roboto</family>
+                    <pointsize>12</pointsize>
+                    <weight>75</weight>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton {
+background-color: rgb(85, 44, 227);
+border: 2px solid;
+border-radius: 5px;
+color: rgb(255, 255, 255)
+}
+
+QPushButton:hover{
+background-color: rgb(75, 34, 217);
+border: 2px solid rgb(50, 50, 50);
+
+}</string>
+                  </property>
+                  <property name="text">
+                   <string>Download MP3</string>
+                  </property>
+                  <property name="icon">
+                   <iconset resource="Assets/Resources.qrc">
+                    <normaloff>:/MP3/mp3.ico</normaloff>:/MP3/mp3.ico</iconset>
+                  </property>
+                 </widget>
+                 <widget class="QLabel" name="duracao">
+                  <property name="geometry">
+                   <rect>
+                    <x>134</x>
+                    <y>210</y>
+                    <width>190</width>
+                    <height>21</height>
+                   </rect>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Roboto</family>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Duração</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="page">
+           <layout class="QVBoxLayout" name="verticalLayout_2">
+            <item>
+             <widget class="QLabel" name="ProcurandoVideo">
+              <property name="font">
+               <font>
+                <family>Roboto</family>
+                <pointsize>48</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>Procurando Vídeo...</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+         <widget class="QLabel" name="caminho">
+          <property name="geometry">
+           <rect>
+            <x>225</x>
+            <y>210</y>
+            <width>550</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="Resources.qrc"/>
+  <include location="Assets/Resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
